@@ -1,4 +1,4 @@
-import React, { useState, Fragment, useEffect } from 'react';
+import { useState, Fragment, useEffect } from 'react';
 import { Dialog, Transition, Listbox } from '@headlessui/react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -18,7 +18,6 @@ const languages = [
 
 const Navbar = () => {
 	const { t, lang } = useTranslation('common');
-	const router = useRouter();
 
 	const [isOpen, setIsOpen] = useState(false);
 	const { pathname } = useRouter();
